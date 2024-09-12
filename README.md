@@ -15,27 +15,6 @@ docker pull postgres:16
 docker run --name meu-postgres -e POSTGRES_PASSWORD=minha_senha -e POSTGRES_DB=meu_banco -p 5432:5432 -d postgres:16
 ```
 
-## Script para inserir Mensagens no banco:
-```
-INSERT INTO sms_messages (phone, message, status, "createdAt", "updatedAt")
-VALUES
-('2199999999', 'Você tem precatórios a receber do governo federal', '', NOW(), NOW()),
-('2199999999', 'Deseja antecipar R$1.000,00 de processo a receber?', '', NOW(), NOW()),
-('2199999999', 'Precatório municipal em fase de recebimento', '', NOW(), NOW()),
-('2199999999', 'R$20.000,00 a receber por processo trabalhista, quer saber mais?', '', NOW(), NOW()),
-('2199999999', 'Precatório judicial em andamento', '', NOW(), NOW()),
-('2199999999', 'R$2.000,00 em saldo de precatórios acumulado, saiba como resgatar', '', NOW(), NOW()),
-('2199999999', 'R$21.050,00 a receber por processo trabalhista, quer saber mais?', '', NOW(), NOW()),
-('2199999999', 'Deseja antecipar R$100.000,00 de processo a receber?', '', NOW(), NOW()),
-('2199999999', 'R$6.000,00 em saldo de precatórios acumulado, saiba como resgatar', '', NOW(), NOW()),
-('2199999999', 'Precatório de dívida ativa', '', NOW(), NOW()),
-('2199999999', 'Precatório federal com previsão de pagamento para mais de um ano, deseja receber agora?', '', NOW(), NOW()),
-('2199999999', 'Processo atraso no pagamento, antecipe conosco', '', NOW(), NOW()),
-('2199999999', 'Precatório com correção monetária', '', NOW(), NOW()),
-('2199999999', 'R$10.000,00 em saldo de precatórios acumulado, saiba como resgatar', '', NOW(), NOW()),
-('2199999999', 'Precatório liberado para saque', '', NOW(), NOW());
-```
-
 ## Instalação
 
 1. Clone o repositório:
@@ -68,3 +47,24 @@ VALUES
    ```
 
 2. A API estará disponível em http://localhost:3000.
+
+## Script para inserir Mensagens no banco:
+```
+INSERT INTO sms_messages (phone, message, status, "createdAt", "updatedAt")
+VALUES
+('2199999999', 'Você tem precatórios a receber do governo federal', '', NOW(), NOW()),
+('2199999999', 'Deseja antecipar R$1.000,00 de processo a receber?', '', NOW(), NOW()),
+('2199999999', 'Precatório municipal em fase de recebimento', '', NOW(), NOW()),
+('2199999999', 'R$20.000,00 a receber por processo trabalhista, quer saber mais?', '', NOW(), NOW()),
+('2199999999', 'Precatório judicial em andamento', '', NOW(), NOW()),
+('2199999999', 'R$2.000,00 em saldo de precatórios acumulado, saiba como resgatar', '', NOW(), NOW()),
+('2199999999', 'R$21.050,00 a receber por processo trabalhista, quer saber mais?', '', NOW(), NOW()),
+('2199999999', 'Deseja antecipar R$100.000,00 de processo a receber?', '', NOW(), NOW()),
+('2199999999', 'R$6.000,00 em saldo de precatórios acumulado, saiba como resgatar', '', NOW(), NOW()),
+('2199999999', 'Precatório de dívida ativa', '', NOW(), NOW()),
+('2199999999', 'Precatório federal com previsão de pagamento para mais de um ano, deseja receber agora?', '', NOW(), NOW()),
+('2199999999', 'Processo atraso no pagamento, antecipe conosco', '', NOW(), NOW()),
+('2199999999', 'Precatório com correção monetária', '', NOW(), NOW()),
+('2199999999', 'R$10.000,00 em saldo de precatórios acumulado, saiba como resgatar', '', NOW(), NOW()),
+('2199999999', 'Precatório liberado para saque', '', NOW(), NOW());
+```
