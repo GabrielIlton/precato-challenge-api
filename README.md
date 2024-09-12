@@ -5,11 +5,15 @@ Permite o envio e gerenciamento de status de mensagens SMS e fornece endpoints p
 
 ## Pré-requisitos
 
-Certifique-se de ter o seguinte software instalado na sua máquina:
+Instale os seguintes softwares:
 
-- [Node.js](https://nodejs.org/) - versão 14 ou superior
-- [PostgreSQL](https://www.postgresql.org/) - Configurado e rodando
+- [Node.js](https://nodejs.org/) - LTS
 
+Instale o [PostgresSQL](https://www.postgresql.org/) ou configure a imagem Docker:
+```bash
+docker pull postgres:16
+docker run --name meu-postgres -e POSTGRES_PASSWORD=minha_senha -e POSTGRES_DB=meu_banco -p 5432:5432 -d postgres:16
+```
 ## Instalação
 
 1. Clone o repositório:
@@ -20,25 +24,25 @@ Certifique-se de ter o seguinte software instalado na sua máquina:
    ```
 
 2. Instale as dependências do projeto:
+   ```bash
    npm install
+   ```
 
 3. Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente:
+   ```bash
    PORT=3000
    DB_HOST=localhost
    DB_PORT=5432
    DB_USER=seu_usuario_postgres
    DB_PASSWORD=sua_senha_postgres
    DB_NAME=nome_do_banco_de_dados
-
-4. Configure o banco de dados no PostgreSQL (crie o banco se necessário):
-   psql -U seu_usuario_postgres -c "CREATE DATABASE nome_do_banco_de_dados;"
-
+   ```
+   
 ## Rodando a Aplicação
 
-1. Execute as migrações do banco de dados para criar as tabelas:
-   npm run typeorm migration:run
-
-2. Inicie o servidor:
+1. Inicie o servidor:
+   ```bash
    npm run dev
+   ```
 
-3. A API estará disponível em http://localhost:3000.
+2. A API estará disponível em http://localhost:3000.
