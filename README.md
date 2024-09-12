@@ -15,8 +15,8 @@ Certifique-se de ter o seguinte software instalado na sua máquina:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/GabrielIlton/sms-precato-api.git
+   cd sms-precato-api
    ```
 
 2. Instale as dependências do projeto:
