@@ -5,7 +5,7 @@ Permite o envio e gerenciamento de status de mensagens SMS e fornece endpoints p
 
 ## Pré-requisitos
 
-Instale os seguintes softwares:
+Instale os softwares:
 
 - [Node.js](https://nodejs.org/) - LTS
 
@@ -19,8 +19,8 @@ docker run --name meu-postgres -e POSTGRES_PASSWORD=minha_senha -e POSTGRES_DB=m
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/GabrielIlton/sms-precato-api.git
-   cd sms-precato-api
+   git clone https://github.com/GabrielIlton/precato-challenge-api.git
+   cd precato-challenge-api
    ```
 
 2. Instale as dependências do projeto:
