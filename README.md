@@ -1,4 +1,4 @@
-# SMS Messaging API
+# Precato Challenge API
 
 API de mensageria SMS construída com Node.js, TypeScript, Fastify, e TypeORM.
 Permite o envio e gerenciamento de status de mensagens SMS e fornece endpoints para atualizar o status e listar mensagens com base no status.
